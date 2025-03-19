@@ -8,6 +8,7 @@ const nextConfig = {
 			'i.postimg.cc',
 			'flagcdn.com',
 			'avatars.steamstatic.com',
+			'i.ibb.co',
 		],
 	},
 }

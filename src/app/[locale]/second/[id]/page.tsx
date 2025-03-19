@@ -78,7 +78,7 @@ export default async function Second({
         className="w-[100vw] h-[70vh] relative grid grid-cols-1 md:grid-cols-3"
         style={{
           backgroundImage:
-            "url('https://i.postimg.cc/zv21zTFx/photo-2025-03-18-23-06-55.jpg')",
+            "url('https://static.csstats.gg/images/cs-background.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -90,7 +90,7 @@ export default async function Second({
               "Please register or log in to view full profile details."}
           </p>
           <a
-            href="https://csstats.gg/login"
+            href="https://csstats.xyz/login/"
             className="flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all"
           >
             {tHome.signInWithSteam || "Sign in with Steam"}

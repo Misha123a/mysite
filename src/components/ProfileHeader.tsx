@@ -19,7 +19,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
   const [matchType] = useState("5v5");
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  const tabs = ["STATS", "GRAPHS", "WEAPONS", "MAPS", "MATCHES", "PLAYED WITH"];
+  const tabs = ["STATS", "GRAPHS", "WEAPONS", "MAPS", "MATCHES", "SKIN+SKILL"];
 
   const handleTabClick = (tab: string) => {
     onTabChange(tab);
@@ -34,8 +34,8 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
             <Image
               src={avatarUrl}
               alt={nickname}
-              width={72}
-              height={72}
+              width={92}
+              height={92}
               className="object-cover"
             />
           </div>
@@ -43,16 +43,22 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
           <div className="flex flex-col">
             <h1 className="text-xl font-medium">{nickname}</h1>
             <div className="flex items-center gap-2 mt-1">
-              <button className="bg-[#12151f] rounded p-1">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                  <path d="M20 5h-3V3a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-2h2a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3zm-5 16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v18zm6-5a1 1 0 0 1-1 1h-3V8a1 1 0 0 0-1-1H9V5h11a1 1 0 0 1 1 1v10z" />
-                </svg>
-              </button>
-              <button className="bg-[#12151f] rounded p-1">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#ff5722">
-                  <path d="M12 0L4 8h6v16h4V8h6L12 0z" />
-                </svg>
-              </button>
+            <button className="bg-[#12151f] rounded p-1">
+                <img
+                src="https://i.ibb.co/G3nJmkhS/Steam-Logo.png"  // steam
+                alt="Icon"
+                width="34"
+                height="34"
+                />
+                </button>
+                <button className="bg-[#12151f] rounded p-1">
+                <img
+                src="https://i.ibb.co/hF825wCX/unnamed.png"  //faceit
+                alt="Icon"
+                width="25"
+                height="25"
+                />
+                </button>
             </div>
           </div>
         </div>

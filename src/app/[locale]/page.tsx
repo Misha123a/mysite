@@ -27,7 +27,7 @@ export default function Home() {
 					<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold'>
 						{tHome('title')}
 					</h1>
-					<h3 className='text-base sm:text-lg'>{tHome('subtitle')}</h3>
+					<h3 className='text-base sm:text-lg'>{tHome('subtitle')} <br /> {tHome('subtitle1')} </h3>
 
 					<div className='pb-8 text-base flex flex-wrap items-center gap-6'>
 						<Image
@@ -80,7 +80,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className='w-full md:w-1/2 text-white text-center md:text-right'>
+				<div className='w-full md:w-1/2 md:ml-100 text-white text-center md:text-centre'>
 					<h2 className='text-xl md:text-2xl uppercase'>
 						{tHome('steamBot.introducing')} <br /> {tHome('steamBot.title')}{' '}
 						<span className='bg-blue-500 px-1.5 py-1 rounded-lg uppercase'>
@@ -88,16 +88,17 @@ export default function Home() {
 						</span>
 					</h2>
 
-					<h4 className='text-sm md:text-base mt-2'>
-						{tHome('steamBot.description')}
+					<h4 className='text-sm md:text-base mt-3'>
+						{tHome('steamBot.description')} <br />
+						{tHome('steamBot.description1')}
 					</h4>
 
 					<Image
-						src='https://static.csstats.gg/images/steam-bot.png'
+						src='https://i.ibb.co/RG5cmSDv/newawp-1.png'
 						alt='sasa'
 						height={150}
 						width={350}
-						className='mx-auto md:ml-auto md:mr-0 mt-4 w-full max-w-[300px] md:max-w-[350px]'
+						className='mx-auto md:ml-auto md:mr-35 mt-3 w-full max-w-[300px] md:max-w-[350px]'
 					></Image>
 
 					<p className='text-[10px] md:text-[11px] mt-2'>

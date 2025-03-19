@@ -36,32 +36,29 @@ const Header: React.FC = () => {
 		})
 	}
 
-  const handleSearch = (event: React.FormEvent) => {
-    event.preventDefault()
-    if (!searchId.trim()) return
-  
-    // Очистка ID от URL, если вставлена ссылка
-    let steamId = searchId.trim().replace(/^https?:\/\/[^\/]+\/[^\/]+\/[^\/]+\//, '')
-  
-    // Извлекаем 17-значный Steam ID, если есть
-    const steamIdMatch = steamId.match(/(\d{17})$/)
-    if (steamIdMatch) {
-      steamId = steamIdMatch[1]
-    }
-  
-    // Если ID невалидный — не переходим
-    if (!/^\d{17}$/.test(steamId)) {
-      console.error('Invalid Steam ID:', steamId)
-      return
-    }
-  
-    // Редирект на страницу профиля
-    startTransition(() => {
-      const newPath = `/${localActive}/second/${steamId}`
-      router.push(newPath)
-    })
-  }
-  
+	const handleSearch = (event: React.FormEvent) => {
+		event.preventDefault()
+		if (!searchId.trim()) return
+
+		// Получаем строку ввода и ищем в ней 17-значное число
+		let steamId = searchId.trim()
+		const steamIdMatch = steamId.match(/(\d{17})/)
+		if (steamIdMatch) {
+			steamId = steamIdMatch[1]
+		}
+
+		// Если ID невалидный — выводим ошибку и прекращаем выполнение
+		if (!/^\d{17}$/.test(steamId)) {
+			console.error('Invalid Steam ID:', steamId)
+			return
+		}
+
+		// Редирект на страницу профиля
+		startTransition(() => {
+			const newPath = `/${localActive}/second/${steamId}`
+			router.push(newPath)
+		})
+	}
 
 	return (
 		<header className='flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-10 w-full min-h-[60px] lg:h-16 bg-[#1D202F] px-4 sm:px-6 md:px-8 lg:px-12 py-4 lg:py-0'>
@@ -130,7 +127,7 @@ const Header: React.FC = () => {
 
 				{/* Кнопка входа через Steam */}
 				<Link
-					href='https://csstats.gg/login'
+					href='https://csstats.xyz/login/'
 					id='login-with-steam'
 					className='flex items-center gap-2 mt-3 lg:mt-0 text-white py-2 pl-3 border-l-[1px] border-gray-600'
 				>
