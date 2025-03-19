@@ -112,18 +112,18 @@ export default function Home() {
 			<ul className='px-7 pt-7 pb-12 grid grid-cols-1 md:grid-cols-3 gap-6 w-full lg:w-1/2 lg:min-w-[540px] bg-[#181A26] border border-[#181A26] ml-0 lg:ml-16 shadow-[2px_2px_10px_0_#0000003a] -mb-48 lg:-mb-20 relative z-30 font-cairo'>
 				<li className='flex flex-col items-center uppercase text-[14px] font-bold'>
 					<ChartNoAxesColumn className='w-7 h-8 text-[#3872FC] mr-2' />
-					<p className='text-[36px] pt-5'>251.7M</p>
-					<p>{tHome('stats.gamesProcessed')}</p>
+					<p className='text-[36px] pt-5 text-[#ffffff]'>251.7M</p>
+					<p className='text-[#ffffff]'>{tHome('stats.gamesProcessed')}</p>
 				</li>
 				<li className='flex flex-col items-center uppercase text-[14px] font-bold'>
 					<UserRound className='w-7 h-8 text-[#3872FC] mr-2' />
-					<p className='text-[36px]  pt-5'>36.7M</p>
-					<p>{tHome('stats.playersSeen')}</p>
+					<p className='text-[36px]  pt-5 text-[#ffffff]'>36.7M</p>
+					<p className='text-[#ffffff]'>{tHome('stats.playersSeen')}</p>
 				</li>
 				<li className='flex flex-col items-center uppercase text-[14px] font-bold'>
 					<Eye className='w-7 h-8 text-[#3872FC] mr-2' />
-					<p className='text-[36px]  pt-5'>5M</p>
-					<p>{tHome('stats.vacBansTracked')}</p>
+					<p className='text-[36px]  pt-5 text-[#ffffff]'>5M</p>
+					<p className='text-[#ffffff]'>{tHome('stats.vacBansTracked')}</p>
 				</li>
 			</ul>
 
