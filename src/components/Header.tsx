@@ -69,7 +69,7 @@ const Header: React.FC = () => {
 					id='logo'
 					className='text-white text-base sm:text-lg md:text-xl font-bold tracking-wide hover:opacity-80 transition-opacity font-cairo italic'
 				>
-					CS<span className='text-[#3872FC]'>STATS</span>.GG
+					CS<span className='text-[#3872FC]'>STATS</span>.COM
 				</Link>
 			</div>
 
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
 					value={searchId}
 					onChange={e => setSearchId(e.target.value)}
 				/>
-				<Search width={24} height={24} className='absolute top-2 left-2' />
+				<Search width={24} height={24} className='absolute top-2 left-2 text-white' />
 			</form>
 
 			<div className='flex items-center'>
