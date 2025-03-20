@@ -94,7 +94,7 @@ export default function Home() {
 					</h4>
 
 					<Image
-						src='https://i.ibb.co/RG5cmSDv/newawp-1.png'
+						src='https://i.ibb.co/s4JD09Q/184800-b.png'
 						alt='sasa'
 						height={150}
 						width={350}
