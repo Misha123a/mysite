@@ -6,7 +6,6 @@ interface ProfileHeaderProps {
   nickname: string;
   avatarUrl: string;
   activeTab: string;
-  steamId: string;
   onTabChange: (tab: string) => void;
 }
 
@@ -14,7 +13,6 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
   nickname,
   avatarUrl,
   activeTab,
-  steamId,
   onTabChange,
 }) => {
   const [gameMode] = useState("CS2");
@@ -45,7 +43,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
           <div className="flex flex-col">
             <h1 className="text-xl font-medium">{nickname}</h1>
             <div className="flex items-center gap-2 mt-1">
-            <button className="bg-[#12151f] rounded p-1" onClick={() => window.open(`https://steamcommunity.com/profiles/${steamId}`, "_blank")}>
+            <button className="bg-[#12151f] rounded p-1" onClick={() => window.open(`https://steamcommunity.com/profiles/undefined`, "_blank")}>
                 <img
                 src="https://i.ibb.co/G3nJmkhS/Steam-Logo.png"  // steam
                 alt="Icon"
