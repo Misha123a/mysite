@@ -22,8 +22,8 @@ const cairo = Cairo({
 })
 
 export const metadata: Metadata = {
-	title: 'CS2 Stats',
-	description: 'Track your CS2 stats in Competitive and Premier matchmaking',
+	title: 'CS2 Stats - The Ultimate CS2 Stat Tracker - csstat.com',
+	description: 'Automatically track your CS2 stats, matches and rank. Share your CS2 stats with your friends, or just watch your stats progress over time.',
 }
 
 interface RootLayoutProps {
