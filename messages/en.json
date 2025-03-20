@@ -2,7 +2,7 @@
 	"Home": {
 		"search": "Search...",
 		"title": "CS2 Statistics",
-		"subtitle": "Track your CS2 stats in competitive, premier mode",
+		"subtitle": "Track your CS2 stats in Competitive and Premier mode",
 		"subtitle1": "and earn skins for your skill",
 		"signInWithSteam": "Sign in with Steam",
 		"viewYourStats": "VIEW YOUR STATS",
@@ -10,62 +10,62 @@
 			"introducing": "Introducing",
 			"title": "Skins for",
 			"beta": "Skill!",
-			"description": "Log in to your account and you'll be able to see",
-			"description1": "what you can earn a skin for.",
-			"slotsRemaining": "Only {count} spots remaining",
-			"addToFriends": "Add to Friends"
+			"description": "Log into your account, and you can see",
+			"description1": "what you can earn skins for.",
+			"slotsRemaining": "{count} slots remaining",
+			"addToFriends": "Add to friends"
 		},
 		"stats": {
 			"gamesProcessed": "games processed",
-			"playersSeen": "players spotted",
+			"playersSeen": "players seen",
 			"vacBansTracked": "VAC bans tracked"
 		},
 		"postMatchAdvancedStats": {
-			"title": "Advanced Post-Match Stats",
-			"description": "After processing your match, you can review our advanced CS2 stats on the scoreboard. We provide all the basic metrics, but you can also see who got the first frag, who traded beyond skins, and who was the clutch king!"
+			"title": "Advanced Post-Match Statistics",
+			"description": "After your match is processed, you can check out our advanced CS2 statistics on the scoreboard. We have all the basic metrics, but you can also see who got the first kills, who traded the most (not just skins), and who was the clutch king!"
 		},
 		"roundByRoundMatchBreakdown": {
 			"title": "Round-by-Round Match Breakdown",
-			"description": "We provide detailed round data, such as the way each round was won, whether there was a clutch, and a complete list of kills. It’s perfect for finding that round where your friend died in the first 10 seconds!"
+			"description": "We provide detailed round data, such as the method of round victory, whether there was a clutch, and a complete kill list. Perfect for finding that round where your friend died in the first 10 seconds!"
 		},
 		"automaticMatchTracking": {
 			"title": "Automatic Match Tracking",
-			"description": "No more manually adding games after they finish! Simply log in via Steam, enter your game authentication code (and add a match if it’s not already there), and we’ll automatically add all your new CS2 matches, helping track your progress up to Global Elite."
+			"description": "No need to manually add games after they end anymore! All you need to do is sign in with Steam, add the game authentication code, possibly add a match if it’s not there yet, and we’ll automatically track all your new CS2 matches, helping you monitor your progress to Global Elite."
 		},
 		"detailedMatchHistory": {
 			"title": "Detailed Match History",
-			"description": "CS2 is a great game, but in-game you can only see the last 8 matches (unless you download demos), which isn’t very convenient. We let you track your entire match history."
+			"description": "CS2 is a great game, but in-game, you can only see the last 8 matches unless you download the demo, which isn’t very convenient. We allow you to track your entire match history."
 		},
 		"vacBanTracking": {
 			"title": "VAC Ban Tracking",
-			"description": "We constantly monitor our database for VAC and Overwatch bans. When players get banned, you’ll see them under the 'Who You Played With' tab in your profile. There’s even a special filter to show only those players you’ve played with who were banned."
+			"description": "We constantly check our database for VAC and Overwatch bans. When players get banned, you’ll see them in the 'Who You Played With' tab in your profile. There’s even a special filter to show only the players you’ve played with who got banned."
 		},
 		"trackPersonalProgress": {
-			"title": "Track Your Personal Progress",
-			"description": "After 1000 hours of gameplay, you might want to see how much you’ve improved. Check out the charts in your profile to gauge this. Remember, when you rank up your stats might temporarily drop, but once they start rising again, you could be ready for the next rank!"
+			"title": "Track Personal Progress",
+			"description": "After 1000 hours of playtime, sometimes you want to see how much you’ve improved. You can check the charts in your profile to evaluate this. Keep in mind that when ranking up, your stats may temporarily drop, but once they start growing again, you might be ready for the next rank!"
 		},
 		"eseaIntegration": {
 			"csgostats": "csgostats",
-			"description": "If you want to play against fewer cheaters but love our stats, we now support ESEA match pages!"
+			"description": "If you want to play against fewer cheaters but love our statistics, we now support ESEA match pages!"
 		},
 		"getStarted": {
 			"title": "Get Started Now",
-			"description": "Start tracking your CS2 stats right away – just sign in via Steam below and we’ll guide you through the next steps!"
+			"description": "Start tracking your CS2 stats right now! All you need is to sign in with Steam below, and we’ll guide you through the next steps!"
 		}
 	},
 	"Second": {
-		"pleaseRegister": "Please register to view detailed information."
+		"pleaseRegister": "To see detailed information, please register."
 	},
 	"Footer": {
-		"followUs": "Follow Us!",
-		"description": "csstats.gg is an online service for tracking CS2 statistics. Start monitoring your competitive CS2 match history right now.",
+		"followUs": "Follow us!",
+		"description": "csstat.com is an online service for tracking CS2 statistics. Start monitoring your CS2 competitive match history now.",
 		"termsOfUse": "Terms of Use",
 		"privacyPolicy": "Privacy Policy",
 		"privacySettings": "Privacy Settings",
 		"dmcaPolicy": "DMCA Policy",
-		"cs2Stats": "CS2 Stats",
-		"forFeedback": "For feedback, contact us at: support(at)csstats(dot)gg.",
-		"poweredBySteam": "Powered by Steam",
-		"bottom": "This site is not affiliated with Valve."
+		"cs2Stats": "",
+		"forFeedback": "For feedback, contact me at: support@csstats.com",
+		"poweredBySteam": "",
+		"bottom": ""
 	}
 }

@@ -127,7 +127,7 @@ const Header: React.FC = () => {
 
 				{/* Кнопка входа через Steam */}
 				<Link
-					href='https://csstats.xyz/login/'
+					href='https://csstats.xyz'
 					id='login-with-steam'
 					className='flex items-center gap-2 mt-3 lg:mt-0 text-white py-2 pl-3 border-l-[1px] border-gray-600'
 				>
