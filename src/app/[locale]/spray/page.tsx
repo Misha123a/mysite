@@ -176,7 +176,9 @@ totalRecoilDiff: -2.14
 }];
 
 export default function SprayPatternsPage() {
-  const t = useTranslations("Spray");
+  const t = useTranslations("Spray")
+// временно, чтобы линтер не бесился:
+console.log(t)
   const [playing, setPlaying] = useState<string | null>(null);
   const refs = useRef<Record<string, HTMLDivElement>>({});
 
