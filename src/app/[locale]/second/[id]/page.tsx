@@ -85,7 +85,7 @@ export default async function Second({
             {tSecond.pleaseRegister || "Please register or log in to view full profile details."}
           </p>
           <a
-            href="https://csstats.xyz"
+            href=""
             className="flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all"
           >
             {tHome.signInWithSteam || "Sign in with Steam"}
