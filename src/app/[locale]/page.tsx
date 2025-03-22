@@ -53,7 +53,7 @@ export default function Home() {
 						/>
 					</div>
 					<a
-						href=''
+						href='https://csstats.xyz/'
 						className='relative flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all w-fit min-w-[195px]'
 					>
 						{tHome('signInWithSteam')}
@@ -302,7 +302,7 @@ export default function Home() {
 						{tHome('getStarted.description')}
 					</p>
 					<a
-						href=''
+						href='https://csstats.xyz/'
 						className='flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all'
 					>
 						{tHome('signInWithSteam')}
