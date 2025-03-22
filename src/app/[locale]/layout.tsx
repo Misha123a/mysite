@@ -33,7 +33,7 @@ const MESSAGES = {
   pl: messagesPl
 }
 
-// 🧩 Шрифты
+// 🧩 Шрифт
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
