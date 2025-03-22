@@ -165,7 +165,8 @@ const weapons = [
 
 export default function SprayPatternsPage() {
   const t = useTranslations("Spray")
-  const [playingWeapon, setPlayingWeapon] = useState<string | null>(null)
+  const [playing, setPlaying] = useState<string | null>(null)
+
   const refs = weapons.reduce(
     (acc, weapon) => {
       acc[weapon.id] = useRef<HTMLDivElement | null>(null)
@@ -175,20 +176,20 @@ export default function SprayPatternsPage() {
   )
 
   const playVideos = (id: string) => {
-    setPlayingWeapon(id)
-
+    setPlaying(id)
     const cs2Video = document.getElementById(`${id}-cs2`) as HTMLVideoElement
     const csgoVideo = document.getElementById(`${id}-csgo`) as HTMLVideoElement
 
     if (cs2Video && csgoVideo) {
-		cs2Video.currentTime = 0
-		csgoVideo.currentTime = 0
-		cs2Video.play()
-		csgoVideo.play()
+      cs2Video.currentTime = 0
+      csgoVideo.currentTime = 0
+      cs2Video.play()
+      csgoVideo.play()
 
       setTimeout(() => {
         cs2Video.pause()
         csgoVideo.pause()
+        setPlaying(null)
       }, 2000)
     }
   }
@@ -210,13 +211,11 @@ export default function SprayPatternsPage() {
       {weapons.map((weapon) => (
         <div key={weapon.id} ref={refs[weapon.id]} className="mb-20 border-b border-blue-800 pb-10">
           <div className="flex flex-col md:flex-row md:items-center md:space-x-10">
-            {/* Left Side Info */}
             <div className="md:w-1/2 space-y-4 mb-6 md:mb-0">
               <div className="flex items-center space-x-4">
                 <Image src={weapon.image} alt={weapon.name} width={60} height={60} />
                 <h2 className="text-3xl font-bold border-b-2 border-blue-500 inline-block pb-1">{weapon.name}</h2>
               </div>
-
               <div className="space-y-4 mt-4">
                 <div>
                   <p className="text-sm text-gray-400">Recoil Height</p>
@@ -236,7 +235,6 @@ export default function SprayPatternsPage() {
               </div>
             </div>
 
-            {/* Right Side Videos */}
             <div className="md:w-1/2 grid grid-cols-2 gap-4 relative">
               <video
                 id={`${weapon.id}-cs2`}
@@ -258,12 +256,14 @@ export default function SprayPatternsPage() {
                 style={{ aspectRatio: '3 / 4' }}
               />
 
-              <button
-                onClick={() => playVideos(weapon.id)}
-                className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold z-10"
-              >
-                ▶ Play
-              </button>
+              {playing !== weapon.id && (
+                <button
+                  onClick={() => playVideos(weapon.id)}
+                  className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold z-10"
+                >
+                  ▶ Play
+                </button>
+              )}
             </div>
           </div>
         </div>

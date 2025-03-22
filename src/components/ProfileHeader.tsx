@@ -43,22 +43,30 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
           <div className="flex flex-col">
             <h1 className="text-xl font-medium">{nickname}</h1>
             <div className="flex items-center gap-2 mt-1">
-            <button className="bg-[#12151f] rounded p-1" onClick={() => window.open(`https://steamcommunity.com/profiles/undefined`, "_blank")}>
-                <img
-                src="https://i.ibb.co/G3nJmkhS/Steam-Logo.png"  // steam
-                alt="Icon"
-                width="34"
-                height="34"
+              <button
+                className="bg-[#12151f] rounded p-1"
+                onClick={() =>
+                  window.open(`https://steamcommunity.com/profiles/undefined`, "_blank")
+                }
+              >
+                <Image
+                  src="https://i.ibb.co/G3nJmkhS/Steam-Logo.png"
+                  alt="Steam"
+                  width={34}
+                  height={34}
                 />
-                </button>
-                <button className="bg-[#12151f] rounded p-1" onClick={() => window.open(`https://www.faceit.com/ru/notfound`, "_blank")}>
-                <img
-                src="https://i.ibb.co/hF825wCX/unnamed.png"  //faceit
-                alt="Icon"
-                width="25"
-                height="25"
+              </button>
+              <button
+                className="bg-[#12151f] rounded p-1"
+                onClick={() => window.open(`https://www.faceit.com/ru/notfound`, "_blank")}
+              >
+                <Image
+                  src="https://i.ibb.co/hF825wCX/unnamed.png"
+                  alt="Faceit"
+                  width={25}
+                  height={25}
                 />
-                </button>
+              </button>
             </div>
           </div>
         </div>

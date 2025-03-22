@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import RecentMatches from '../../components/RecentMatches'
 import { Eye, UserRound, ChartNoAxesColumn } from 'lucide-react'
-import Header from '@/components/Header'
 import { useTranslations } from 'next-intl'
 
 export default function Home() {

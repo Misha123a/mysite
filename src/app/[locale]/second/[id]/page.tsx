@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import { ProfileHeaderWrapper } from "@/components/ProfileHeaderWrapper";
 import { TriangleAlert } from "lucide-react";
 import Image from "next/image";
