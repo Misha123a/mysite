@@ -21,7 +21,7 @@ const weapons: Weapon[] = [{
   id: "ak47",
   name: "AK47",
   image: "https://i.ibb.co/Cxctp06/ak47-light.png",
-  cs2Spray: "https://s1.webmshare.com/yq6eW.webm",
+  cs2Spray: "https://files.catbox.moe/v3cdv6.webm",
   csgoSpray: "https://files.catbox.moe/pk9gl8.webm",
   recoilHeight: 11.06,
   recoilWidth: 7.14,
