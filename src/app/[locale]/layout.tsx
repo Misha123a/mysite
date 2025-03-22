@@ -73,14 +73,26 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   const messages = MESSAGES[locale as keyof typeof MESSAGES]
 
   return (
-    <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          <SubNav />
-          <main>{children}</main>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+<html lang={locale}>
+  <head>
+    {/* Google Tag */}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16945154777"></script>
+    <script dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-16945154777');
+      `
+    }} />
+  </head>
+  <body className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Header />
+      <SubNav />
+      <main>{children}</main>
+    </NextIntlClientProvider>
+  </body>
+</html>
   )
 }
