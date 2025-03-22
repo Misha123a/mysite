@@ -3,6 +3,7 @@ import { Cairo, Geist, Geist_Mono } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import Header from '@/components/Header'
+import Script from 'next/script'
 import SubNav from '@/components/SubNav'
 import '../globals.css'
 
@@ -75,16 +76,27 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   return (
 <html lang={locale}>
   <head>
-    {/* Google Tag */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16945154777"></script>
-    <script dangerouslySetInnerHTML={{
-      __html: `
+    {/* Global Google tag (gtag.js) */}
+    <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16945154777" strategy="afterInteractive" />
+    <Script id="gtag-init" strategy="afterInteractive">
+      {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'AW-16945154777');
-      `
-    }} />
+      `}
+    </Script>
+
+    {/* Conversion event — вставляем сразу после глобального тега */}
+    <Script id="gtag-conversion" strategy="afterInteractive">
+      {`
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16945154777/NSQhCM36hq4aENmVipA_',
+          'value': 1.0,
+          'currency': 'EUR'
+        });
+      `}
+    </Script>
   </head>
   <body className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}>
     <NextIntlClientProvider locale={locale} messages={messages}>
