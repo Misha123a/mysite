@@ -1,0 +1,167 @@
+{
+	"Home": {
+	  "search": "查找玩家（Steam ID/Steam 个人资料链接/自定义 Steam URL）或添加比赛",
+	  "title": "CS2 统计",
+	  "subtitle": "在竞技和 Premier 模式下追踪你的 CS2 数据",
+	  "subtitle1": "并根据你的技能获得皮肤",
+	  "signInWithSteam": "通过 Steam 登录",
+	  "viewYourStats": "查看你的统计数据",
+	  "steamBot": {
+		"introducing": "介绍",
+		"title": "皮肤奖励",
+		"beta": "技能！",
+		"description": "登录你的账户，你可以查看",
+		"description1": "获得皮肤的条件。",
+		"slotsRemaining": "剩余 {count} 个名额",
+		"addToFriends": "添加好友"
+	  },
+	  "stats": {
+		"gamesProcessed": "处理的比赛数",
+		"playersSeen": "观察到的玩家数",
+		"vacBansTracked": "追踪到的 VAC 封禁"
+	  },
+	  "postMatchAdvancedStats": {
+		"title": "赛后高级统计",
+		"description": "比赛处理完成后，你可以在仪表盘上查看我们的 CS2 高级统计数据。我们提供所有基本指标，同时你还可以看到谁先取得击杀，谁交易的不仅仅是皮肤，以及谁是 clutch 之王！"
+	  },
+	  "roundByRoundMatchBreakdown": {
+		"title": "逐轮比赛分析",
+		"description": "我们提供详细的轮次数据，如回合胜利方式、是否有 clutch 以及完整的击杀列表。这非常适合查找你朋友在前 10 秒内死亡的那一局！"
+	  },
+	  "automaticMatchTracking": {
+		"title": "自动比赛追踪",
+		"description": "比赛结束后无需手动添加！只需通过 Steam 登录，输入游戏认证码，如果还没有比赛，我们会自动添加你所有的新 CS2 比赛，帮助你追踪进度直至 Global Elite。"
+	  },
+	  "detailedMatchHistory": {
+		"title": "详细比赛历史",
+		"description": "CS2 是一款很棒的游戏，但游戏内你只能看到最近 8 场比赛（如果没有下载 demo），这不太方便。我们让你可以追踪所有比赛历史。"
+	  },
+	  "vacBanTracking": {
+		"title": "VAC 封禁追踪",
+		"description": "我们不断检查数据库中的 VAC 和 Overwatch 封禁。当玩家被封禁时，你可以在个人资料的“与谁同玩”标签中看到他们。还有一个专门的过滤器，只显示那些与你同玩的被封禁玩家。"
+	  },
+	  "trackPersonalProgress": {
+		"title": "追踪个人进步",
+		"description": "游戏 1000 小时后，有时你会想知道自己提高了多少。你可以在个人资料中查看图表来评估这一点。记住，当你升级时，你的数值可能会暂时下降，但一旦回升，你就可能准备好迎接下一个级别！"
+	  },
+	  "eseaIntegration": {
+		"csgostats": "csgostats",
+		"description": "如果你想对抗更少的作弊者，但又喜欢我们的统计数据，我们现在也支持 ESEA 比赛页面！"
+	  },
+	  "getStarted": {
+		"title": "立即开始",
+		"description": "现在开始追踪你的 CS2 数据，只需在下方通过 Steam 登录，我们将引导你完成接下来的步骤！"
+	  }
+	},
+	"Second": {
+	  "pleaseRegister": "请注册以查看详细信息。"
+	},
+	"Footer": {
+	  "followUs": "关注我们！",
+	  "description": "csstat.com 是一个追踪 CS2 数据的在线服务。立即开始追踪你的 CS2 竞技比赛历史。",
+	  "termsOfUse": "使用条款",
+	  "privacyPolicy": "隐私政策",
+	  "privacySettings": "隐私设置",
+	  "dmcaPolicy": "DMCA 政策",
+	  "cs2Stats": "",
+	  "forFeedback": "反馈请联系：support@csstats.com",
+	  "poweredBySteam": "",
+	  "bottom": ""
+	},
+	"SubNav": {
+	  "overview": "主页",
+	  "leaderboards": "排行榜",
+	  "matches": "所有比赛",
+	  "about": "SPRAY PATTERNS",
+	  "faq": "训练地图"
+	},
+	"Leaderboards": {
+	  "title": "排行榜",
+	  "player": "玩家",
+	  "tracked": "追踪",
+	  "wins": "胜利",
+	  "currentRank": "当前等级",
+	  "bestRank": "最佳等级",
+	  "lastMatch1": "上一场比赛",
+	  "lastMatch": {
+		"match_c94211a5": "5小时前",
+		"match_91ee04bb": "周四 20 Feb 25",
+		"match_928dc6f0": "周六 15 Mar 25",
+		"match_87aeae44": "周六 22 Feb 25",
+		"match_fb36534c": "周一 24 Feb 25",
+		"match_52f8a196": "1天前",
+		"match_d2919aaf": "周五 21 Feb 25",
+		"match_09e0dda1": "8小时前",
+		"match_bbf69e5b": "周四 6 Mar 25",
+		"match_073cc300": "周二 18 Mar 25",
+		"match_14e7eeb5": "周二 4 Mar 25",
+		"match_1a7a928b": "周四 27 Feb 25",
+		"match_9cc70947": "周一 3 Mar 25",
+		"match_782cfdc0": "周六 1 Mar 25",
+		"match_ee7a1289": "周三 19 Mar 25",
+		"match_69e7b6bc": "周二 25 Feb 25",
+		"match_ac77d566": "22小时前",
+		"match_79ed9f08": "周日 2 Mar 25",
+		"match_5a0f42b8": "周日 9 Mar 25",
+		"match_0b842544": "周日 16 Mar 25",
+		"match_8cd0681c": "1小时前",
+		"match_719eb5b7": "周一 17 Mar 25",
+		"match_baf64265": "周一 10 Mar 25",
+		"match_50f644a8": "15小时前",
+		"match_a3b6218b": "周三 5 Mar 25",
+		"match_71e5e7df": "20小时前",
+		"match_0c146aec": "48分钟前",
+		"match_aeacecc5": "周日 23 Feb 25",
+		"match_b6285779": "21小时前",
+		"match_e9c2a33e": "2小时前",
+		"match_8cb3ecf8": "周三 19 Feb 25",
+		"match_a9e15811": "周四 13 Mar 25",
+		"match_83b5819d": "周二 11 Mar 25",
+		"match_ad3440af": "6小时前",
+		"match_da0a9517": "4小时前",
+		"match_caef0c51": "周六 8 Mar 25",
+		"match_bc7e9691": "周五 14 Mar 25",
+		"match_329b0526": "17小时前",
+		"match_c07adf52": "周五 28 Feb 25",
+		"match_0dcd3e54": "周三 26 Feb 25",
+		"match_54731ed4": "9小时前",
+		"match_5c5ba944": "3小时前",
+		"match_7ae3fb01": "23小时前",
+		"match_189ad3ee": "59分钟前",
+		"match_975a4df9": "53分钟前",
+		"match_61e04391": "19小时前",
+		"match_e5e67ef1": "7小时前",
+		"match_729852a9": "周三 12 Mar 25",
+		"match_c3c6f67e": "周五 7 Mar 25",
+		"match_2e43c62f": "56分钟前",
+		"match_98144d49": "18小时前",
+		"match_8c1353f6": "14小时前",
+		"match_036269ce": "47分钟前",
+		"match_7eed795f": "16小时前",
+		"match_d6c498f5": "13小时前",
+		"match_d30dc6b1": "51分钟前",
+		"match_8bf72205": "12小时前",
+		"match_d6e86647": "10小时前",
+		"match_b2f091fe": "49分钟前"
+	  }
+	},
+	"Match": {
+	  "matches": "比赛",
+	  "date": "时间",
+	  "teams": "队伍",
+	  "map": "地图",
+	  "score": "比分",
+	  "details": "详情",
+	  "player": "玩家",
+	  "kills": "击杀",
+	  "deaths": "死亡",
+	  "adr": "ADR",
+	  "minutesAgo": "分钟前"
+	},
+	"Spray": {
+	  "recoilHeight": "后坐力高度",
+	  "recoilWidth": "后坐力宽度",
+	  "recoilArea": "后坐力区域",
+	  "lessThanCSGO": "低于 CS:GO"
+	}
+} 

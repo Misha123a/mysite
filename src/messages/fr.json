@@ -1,0 +1,169 @@
+{
+    "Home": {
+      "search": "Trouvez un joueur (Steam ID/lien vers le profil Steam/URL personnalisée Steam) ou ajoutez un match",
+      "title": "Statistiques CS2",
+      "subtitle": "Suivez vos statistiques CS2 en mode compétitif et Premier",
+      "subtitle1": "et obtenez des skins grâce à votre skill",
+      "signInWithSteam": "Se connecter via Steam",
+      "viewYourStats": "VOIR VOS STATISTIQUES",
+      "steamBot": {
+        "introducing": "Nous vous présentons",
+        "title": "Skins pour",
+        "beta": "Skill !",
+        "description": "Connectez-vous à votre compte, et vous pourrez voir,",
+        "description1": "pour quoi vous pouvez obtenir un skin.",
+        "slotsRemaining": "Il reste {count} places",
+        "addToFriends": "Ajouter aux amis"
+      },
+      "stats": {
+        "gamesProcessed": "matchs traités",
+        "playersSeen": "joueurs observés",
+        "vacBansTracked": "bans VAC suivis"
+      },
+      "postMatchAdvancedStats": {
+        "title": "Statistiques avancées post-match",
+        "description": "Après le traitement de votre match, consultez nos statistiques avancées CS2 sur le tableau. Nous avons tous les indicateurs de base, mais vous pouvez également voir qui a réalisé les premières frags, qui a négocié des skins et qui a été le roi du clutch !"
+      },
+      "roundByRoundMatchBreakdown": {
+        "title": "Analyse détaillée du match par rounds",
+        "description": "Nous fournissons des données détaillées par round, telles que la façon de gagner le round, s'il y a eu clutch et la liste complète des éliminations. C'est idéal pour trouver le round où votre ami est mort dans les 10 premières secondes !"
+      },
+      "automaticMatchTracking": {
+        "title": "Suivi automatique des matchs",
+        "description": "Plus besoin d'ajouter manuellement les matchs après leur fin ! Connectez-vous via Steam, ajoutez le code d'authentification du jeu et, s'il vous manque un match, nous l'ajouterons automatiquement pour suivre votre progression jusqu'au Global Elite."
+      },
+      "detailedMatchHistory": {
+        "title": "Historique détaillé des matchs",
+        "description": "CS2 est un excellent jeu, mais en jeu, vous ne voyez que les 8 derniers matchs si vous n'avez pas téléchargé la démo, ce qui n'est pas très pratique. Nous vous permettons de suivre l'intégralité de votre historique."
+      },
+      "vacBanTracking": {
+        "title": "Suivi des bans VAC",
+        "description": "Nous vérifions constamment notre base de données pour les bans VAC et Overwatch. Lorsque des joueurs sont bannis, vous pouvez les voir dans l'onglet 'Avec qui vous avez joué' de votre profil. Un filtre spécial permet même d'afficher uniquement ces joueurs."
+      },
+      "trackPersonalProgress": {
+        "title": "Suivi de votre progression personnelle",
+        "description": "Après 1000 heures de jeu, il est parfois utile de constater vos progrès. Consultez les graphiques dans votre profil pour évaluer cela. Gardez à l'esprit que lors d'une montée en grade, vos statistiques peuvent temporairement baisser, mais dès qu'elles remontent, vous serez prêt pour le niveau supérieur !"
+      },
+      "eseaIntegration": {
+        "csgostats": "csgostats",
+        "description": "Si vous souhaitez jouer contre moins de tricheurs, tout en appréciant nos statistiques, nous supportons désormais également les pages de matchs ESEA !"
+      },
+      "getStarted": {
+        "title": "Commencez maintenant",
+        "description": "Démarrez le suivi de vos statistiques CS2 dès maintenant – connectez-vous via Steam ci-dessous et nous vous guiderons pour la suite."
+      }
+    },
+    "Second": {
+      "pleaseRegister": "Pour voir les informations détaillées, inscrivez-vous."
+    },
+    "Footer": {
+      "followUs": "Suivez-nous !",
+      "description": "csstat.com est un service en ligne pour suivre les statistiques CS2. Commencez dès maintenant à suivre l'historique de vos matchs compétitifs.",
+      "termsOfUse": "Conditions d'utilisation",
+      "privacyPolicy": "Politique de confidentialité",
+      "privacySettings": "Paramètres de confidentialité",
+      "dmcaPolicy": "Politique DMCA",
+      "cs2Stats": "",
+      "forFeedback": "Pour toute rétroaction, contactez-nous : support@csstats.com",
+      "poweredBySteam": "",
+      "bottom": ""
+    },
+    "SubNav": {
+      "overview": "PAGE PRINCIPALE",
+      "leaderboards": "CLASSEMENT",
+      "matches": "TOUS LES MATCHS",
+      "about": "SPRAY PATTERNS",
+      "faq": "CARTE D'ENTRAÎNEMENT"
+    },
+    "Leaderboards": {
+      "title": "Classement",
+      "player": "Joueur",
+      "tracked": "Suivi",
+      "wins": "Victoires",
+      "currentRank": "Rang actuel",
+      "bestRank": "Meilleur rang",
+      "lastMatch1": "Dernier match",
+      "lastMatch": {
+        "match_c94211a5": "il y a 5 heures",
+        "match_91ee04bb": "jeu 20 fév 25",
+        "match_928dc6f0": "sam 15 mar 25",
+        "match_87aeae44": "sam 22 fév 25",
+        "match_fb36534c": "lun 24 fév 25",
+        "match_52f8a196": "il y a 1 jour",
+        "match_d2919aaf": "ven 21 fév 25",
+        "match_09e0dda1": "il y a 8 heures",
+        "match_bbf69e5b": "jeu 6 mar 25",
+        "match_073cc300": "mar 18 mar 25",
+        "match_14e7eeb5": "mar 4 mar 25",
+        "match_1a7a928b": "jeu 27 fév 25",
+        "match_9cc70947": "lun 3 mar 25",
+        "match_782cfdc0": "sam 1 mar 25",
+        "match_ee7a1289": "mer 19 mar 25",
+        "match_69e7b6bc": "mar 25 fév 25",
+        "match_ac77d566": "il y a 22 heures",
+        "match_79ed9f08": "dim 2 mar 25",
+        "match_5a0f42b8": "dim 9 mar 25",
+        "match_0b842544": "dim 16 mar 25",
+        "match_8cd0681c": "il y a 1 heure",
+        "match_719eb5b7": "lun 17 mar 25",
+        "match_baf64265": "lun 10 mar 25",
+        "match_50f644a8": "il y a 15 heures",
+        "match_a3b6218b": "mer 5 mar 25",
+        "match_71e5e7df": "il y a 20 heures",
+        "match_0c146aec": "il y a 48 minutes",
+        "match_aeacecc5": "dim 23 fév 25",
+        "match_b6285779": "il y a 21 heures",
+        "match_e9c2a33e": "il y a 2 heures",
+        "match_8cb3ecf8": "mer 19 fév 25",
+        "match_a9e15811": "jeu 13 mar 25",
+        "match_83b5819d": "mar 11 mar 25",
+        "match_ad3440af": "il y a 6 heures",
+        "match_da0a9517": "il y a 4 heures",
+        "match_ca3d8895": "sam 8 mar 25",
+        "match_bc7e9691": "ven 14 mar 25",
+        "match_329b0526": "il y a 17 heures",
+        "match_c07adf52": "ven 28 fév 25",
+        "match_0dcd3e54": "mer 26 fév 25",
+        "match_54731ed4": "il y a 9 heures",
+        "match_5c5ba944": "il y a 3 heures",
+        "match_7ae3fb01": "il y a 23 heures",
+        "match_189ad3ee": "il y a 59 minutes",
+        "match_975a4df9": "il y a 53 minutes",
+        "match_61e04391": "il y a 19 heures",
+        "match_e5e67ef1": "il y a 7 heures",
+        "match_729852a9": "mer 12 mar 25",
+        "match_c3c6f67e": "ven 7 mar 25",
+        "match_2e43c62f": "il y a 56 minutes",
+        "match_caef0c51": "il y a 11 heures",
+        "match_98144d49": "il y a 18 heures",
+        "match_8c1353f6": "il y a 14 heures",
+        "match_036269ce": "il y a 47 minutes",
+        "match_7eed795f": "il y a 16 heures",
+        "match_d6c498f5": "il y a 13 heures",
+        "match_d30dc6b1": "il y a 51 minutes",
+        "match_8bf72205": "il y a 12 heures",
+        "match_d6e86647": "il y a 10 heures",
+        "match_b2f091fe": "il y a 49 minutes"
+      }
+    },
+    "Match": {
+      "matches": "Matchs",
+      "date": "Temps",
+      "teams": "Équipes",
+      "map": "Carte",
+      "score": "Score",
+      "details": "Détails",
+      "player": "Joueur",
+      "kills": "Éliminations",
+      "deaths": "Morts",
+      "adr": "ADR",
+      "minutesAgo": "minutes"
+    },
+    "Spray": {
+      "recoilHeight": "Hauteur du recul",
+      "recoilWidth": "Largeur du recul",
+      "recoilArea": "Zone de recul",
+      "lessThanCSGO": "moins qu'en CS:GO"
+    }
+  }
+  

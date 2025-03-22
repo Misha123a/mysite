@@ -1,0 +1,169 @@
+{
+    "Home": {
+      "search": "プレイヤーを探す（Steam ID/Steamプロフィールのリンク/カスタムSteam URL）または試合を追加する",
+      "title": "CS2統計",
+      "subtitle": "競技モード、プレミアモードであなたのCS2統計を追跡する",
+      "subtitle1": "そしてスキルに応じてスキンを獲得する",
+      "signInWithSteam": "Steamでログイン",
+      "viewYourStats": "あなたの統計を見る",
+      "steamBot": {
+        "introducing": "ご紹介",
+        "title": "スキンを",
+        "beta": "スキルで！",
+        "description": "アカウントにログインすると、",
+        "description1": "どのスキンがもらえるか確認できます。",
+        "slotsRemaining": "{count}枠残り",
+        "addToFriends": "フレンドに追加"
+      },
+      "stats": {
+        "gamesProcessed": "処理された試合数",
+        "playersSeen": "確認済みプレイヤー数",
+        "vacBansTracked": "追跡されたVACバン数"
+      },
+      "postMatchAdvancedStats": {
+        "title": "試合後の詳細統計",
+        "description": "試合の処理後、ダッシュボードで拡張されたCS2統計をご覧いただけます。基本指標は全て備わっていますが、誰が最初にキルを取ったか、誰がスキン以外も取引したか、そしてクラッチの王者が誰かも確認できます！"
+      },
+      "roundByRoundMatchBreakdown": {
+        "title": "ラウンドごとの詳細な試合分析",
+        "description": "各ラウンドの勝利方法、クラッチの有無、全キルリストなど、詳細なデータを提供します。友達が最初の10秒以内に倒されたラウンドを探すのに最適です！"
+      },
+      "automaticMatchTracking": {
+        "title": "自動試合追跡",
+        "description": "試合終了後に手動で追加する必要はもうありません！Steamでログインし、ゲーム認証コードを入力すれば、新たなCS2試合を自動的に追加し、Global Eliteまでの進捗を追跡します。"
+      },
+      "detailedMatchHistory": {
+        "title": "詳細な試合履歴",
+        "description": "CS2は素晴らしいゲームですが、ゲーム内ではデモ未取得の場合、直近8試合しか表示されません。全試合の履歴を追跡できます。"
+      },
+      "vacBanTracking": {
+        "title": "VACバントラッキング",
+        "description": "VACやOverwatchバンのため、常にデータベースをチェックしています。バンされたプレイヤーは、プロフィールの「一緒にプレイした相手」タブで確認できます。特定のフィルターで、該当プレイヤーのみ表示可能です。"
+      },
+      "trackPersonalProgress": {
+        "title": "個人の進捗を追跡する",
+        "description": "1000時間プレイ後、どれだけ上達したかを確認できます。プロフィールのグラフで進捗を評価しましょう。ランクアップ時、一時的に数値が下がることもありますが、回復すれば次の段階へ！"
+      },
+      "eseaIntegration": {
+        "csgostats": "csgostats",
+        "description": "チーターの少ない対戦を望むなら、当社の統計が大好きなら、ESEA試合ページにも対応中です！"
+      },
+      "getStarted": {
+        "title": "今すぐ始める",
+        "description": "今すぐCS2統計の追跡を開始しましょう。下のSteamログインで次のステップへご案内します。"
+      }
+    },
+    "Second": {
+      "pleaseRegister": "詳細情報を見るには、登録してください。"
+    },
+    "Footer": {
+      "followUs": "フォローしてください！",
+      "description": "csstat.comはCS2統計を追跡するオンラインサービスです。今すぐあなたの競技試合履歴を追跡しましょう。",
+      "termsOfUse": "利用規約",
+      "privacyPolicy": "プライバシーポリシー",
+      "privacySettings": "プライバシー設定",
+      "dmcaPolicy": "DMCAポリシー",
+      "cs2Stats": "",
+      "forFeedback": "フィードバックは support@csstats.com まで",
+      "poweredBySteam": "",
+      "bottom": ""
+    },
+    "SubNav": {
+      "overview": "メインページ",
+      "leaderboards": "リーダーボード",
+      "matches": "すべての試合",
+      "about": "SPRAY PATTERNS",
+      "faq": "トレーニングマップ"
+    },
+    "Leaderboards": {
+      "title": "リーダーボード",
+      "player": "プレイヤー",
+      "tracked": "追跡済み",
+      "wins": "勝利数",
+      "currentRank": "現在のランク",
+      "bestRank": "最高ランク",
+      "lastMatch1": "最後の試合",
+      "lastMatch": {
+        "match_c94211a5": "5時間前",
+        "match_91ee04bb": "木 20-2-25",
+        "match_928dc6f0": "土 15-3-25",
+        "match_87aeae44": "土 22-2-25",
+        "match_fb36534c": "月 24-2-25",
+        "match_52f8a196": "1日前",
+        "match_d2919aaf": "金 21-2-25",
+        "match_09e0dda1": "8時間前",
+        "match_bbf69e5b": "木 6-3-25",
+        "match_073cc300": "火 18-3-25",
+        "match_14e7eeb5": "火 4-3-25",
+        "match_1a7a928b": "木 27-2-25",
+        "match_9cc70947": "月 3-3-25",
+        "match_782cfdc0": "土 1-3-25",
+        "match_ee7a1289": "水 19-3-25",
+        "match_69e7b6bc": "火 25-2-25",
+        "match_ac77d566": "22時間前",
+        "match_79ed9f08": "日 2-3-25",
+        "match_5a0f42b8": "日 9-3-25",
+        "match_0b842544": "日 16-3-25",
+        "match_8cd0681c": "1時間前",
+        "match_719eb5b7": "月 17-3-25",
+        "match_baf64265": "月 10-3-25",
+        "match_50f644a8": "15時間前",
+        "match_a3b6218b": "水 5-3-25",
+        "match_71e5e7df": "20時間前",
+        "match_0c146aec": "48分前",
+        "match_aeacecc5": "日 23-2-25",
+        "match_b6285779": "21時間前",
+        "match_e9c2a33e": "2時間前",
+        "match_8cb3ecf8": "水 19-2-25",
+        "match_a9e15811": "木 13-3-25",
+        "match_83b5819d": "火 11-3-25",
+        "match_ad3440af": "6時間前",
+        "match_da0a9517": "4時間前",
+        "match_ca3d8895": "土 8-3-25",
+        "match_bc7e9691": "金 14-3-25",
+        "match_329b0526": "17時間前",
+        "match_c07adf52": "金 28-2-25",
+        "match_0dcd3e54": "水 26-2-25",
+        "match_54731ed4": "9時間前",
+        "match_5c5ba944": "3時間前",
+        "match_7ae3fb01": "23時間前",
+        "match_189ad3ee": "59分前",
+        "match_975a4df9": "53分前",
+        "match_61e04391": "19時間前",
+        "match_e5e67ef1": "7時間前",
+        "match_729852a9": "水 12-3-25",
+        "match_c3c6f67e": "金 7-3-25",
+        "match_2e43c62f": "56分前",
+        "match_caef0c51": "11時間前",
+        "match_98144d49": "18時間前",
+        "match_8c1353f6": "14時間前",
+        "match_036269ce": "47分前",
+        "match_7eed795f": "16時間前",
+        "match_d6c498f5": "13時間前",
+        "match_d30dc6b1": "51分前",
+        "match_8bf72205": "12時間前",
+        "match_d6e86647": "10時間前",
+        "match_b2f091fe": "49分前"
+      }
+    },
+    "Match": {
+      "matches": "試合",
+      "date": "時間",
+      "teams": "チーム",
+      "map": "マップ",
+      "score": "スコア",
+      "details": "詳細",
+      "player": "プレイヤー",
+      "kills": "キル",
+      "deaths": "死亡",
+      "adr": "ADR",
+      "minutesAgo": "分前"
+    },
+    "Spray": {
+      "recoilHeight": "反動高さ",
+      "recoilWidth": "反動幅",
+      "recoilArea": "反動範囲",
+      "lessThanCSGO": "CS:GO未満"
+    }
+  }
+  

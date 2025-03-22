@@ -9,7 +9,14 @@ import { usePathname, useRouter } from 'next/navigation'
 const LANGUAGES = [
 	{ code: 'en', name: 'English', flag: 'https://flagcdn.com/16x12/gb.png' },
 	{ code: 'ru', name: 'Русский', flag: 'https://flagcdn.com/16x12/ru.png' },
-	{ code: 'zh', name: '中文', flag: 'https://flagcdn.com/16x12/cn.png' },
+	{ code: 'es', name: 'Español', flag: 'https://i.ibb.co/LdknQq3T/Spanish-flag.png' },
+	{ code: 'de', name: 'Deutsch', flag: 'https://i.ibb.co/6JR2bJSm/Flag-of-Germany-svg.png' },
+	{ code: 'pt', name: 'Português', flag: 'https://i.ibb.co/Hf4ysJ7W/Flag-of-Portugal-svg.webp' },
+	{ code: 'uk', name: 'Українська', flag: 'https://i.ibb.co/WNpnS7qF/Flag-of-Ukraine-svg.png' },
+	{ code: 'ja', name: '日本語', flag: 'https://i.ibb.co/ds2qr7WR/Flag-of-Japan-svg.png' },
+	{ code: 'fr', name: 'Français', flag: 'https://i.ibb.co/F4JqNsFd/Flag-of-France.png' },
+	{ code: 'pl', name: 'Polska', flag: 'https://i.ibb.co/Mk13d8XT/pl.png' },
+    { code: 'zh', name: '中文', flag: 'https://flagcdn.com/16x12/cn.png' },
 ]
 
 const Header: React.FC = () => {
@@ -28,9 +35,13 @@ const Header: React.FC = () => {
 		setSelectedLanguage(newLang)
 	}, [localActive])
 
+	const supportedLanguages = LANGUAGES.map(lang => lang.code)
+
 	const changeLanguage = (nextLocale: string) => {
 		startTransition(() => {
-			const newPath = `/${nextLocale}${pathname.replace(`/${localActive}`, '')}`
+			// Удаляем из пути любой существующий языковой префикс
+			const newPathname = pathname.replace(new RegExp(`^/(${supportedLanguages.join('|')})`), '')
+			const newPath = `/${nextLocale}${newPathname}`
 			router.replace(newPath)
 			setIsOpen(false)
 		})
@@ -67,7 +78,7 @@ const Header: React.FC = () => {
 				<Link
 					href={`/${selectedLanguage.code}`}
 					id='logo'
-					className='text-white text-base sm:text-lg md:text-xl font-bold tracking-wide hover:opacity-80 transition-opacity font-cairo italic'
+					className='text-2xl text-white text-base sm:text-lg md:text-xl font-bold tracking-wide hover:opacity-80 transition-opacity font-cairo italic'
 				>
 					CS<span className='text-[#3872FC]'>STATS</span>.COM
 				</Link>
@@ -84,12 +95,28 @@ const Header: React.FC = () => {
 				/>
 				<Search width={24} height={24} className='absolute top-2 left-2 text-white' />
 			</form>
+				{/* Кнопка Discord */}
+				<Link
+					href='https://discord.com/invite/BXf2eMEqGZ'
+					id='discord-button'
+					className='flex items-center gap-2 mt-3 lg:mt-0 text-white py-2 pl-3 border-l-[1px] border-gray-600'
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Image
+						src='https://static.csstats.gg/images/discord.svg'
+						alt='Discord'
+						width={22}
+						height={22}
+						className='w-5 h-5'
+					/>
+				</Link>
 
-			<div className='flex items-center'>
+			<div className='flex items-center gap-4'>
 				{/* Кастомный селектор языка */}
-				<div className='relative mt-3 lg:mt-0'>
+				<div className='relative'>
 					<div
-						className='flex items-center w-fit min-w-[140px] text-white text-sm px-3 py-2 cursor-pointer pr-8'
+						className='flex items-center w-fit min-w-[140px] text-white text-sm px-3 py-2  cursor-pointer pr-8'
 						onClick={() => setIsOpen(!isOpen)}
 					>
 						<Image
@@ -127,21 +154,23 @@ const Header: React.FC = () => {
 
 				{/* Кнопка входа через Steam */}
 				<Link
-					href='https://csstats.xyz'
-					id='login-with-steam'
-					className='flex items-center gap-2 mt-3 lg:mt-0 text-white py-2 pl-3 border-l-[1px] border-gray-600'
-				>
-					<span id='signin-text' className='text-sm'>
-						{t('signInWithSteam')}
-					</span>
-					<Image
-						src='https://static.csstats.gg/images/steam.png'
-						width={22}
-						height={22}
-						alt='Steam Login'
-						className='w-5 h-5 sm:w-[22px] sm:h-[22px]'
-					/>
-				</Link>
+	href='https://csstats.xyz'
+	id='login-with-steam'
+	className='relative flex items-center gap-2 text-white py-2 pl-3 border-l border-gray-600 group'
+>
+	<span id='signin-text' className='text-sm'>
+		{t('signInWithSteam')}
+	</span>
+	<Image
+		src='https://static.csstats.gg/images/steam.png'
+		width={22}
+		height={22}
+		alt='Steam Login'
+		className='w-5 h-5'
+	/>
+	{/* Синяя линия, которая появляется при наведении */}
+	<span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-500 transform scale-x-0 transition-transform duration-300 origin-center group-hover:scale-x-100"></span>
+</Link>
 			</div>
 		</header>
 	)

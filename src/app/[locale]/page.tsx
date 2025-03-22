@@ -12,7 +12,6 @@ export default function Home() {
 
 	return (
 		<>
-			<Header />
 			{/* Hero Section */}
 			<div
 				className='w-full min-h-[50vh] md:h-[70vh] relative flex flex-col md:flex-row justify-between items-center px-4 sm:px-8 md:px-16 lg:px-24 py-8 md:py-16'

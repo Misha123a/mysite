@@ -4,14 +4,25 @@ import { TriangleAlert } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+// Подгружаем переводы по locale
+async function loadMessages(locale: string) {
+  const messages = (await import(`../../../../messages/${locale}.json`)).default;
+  return {
+    tSecond: messages["Second"] || {},
+    tHome: messages["Home"] || {},
+    tFooter: messages["Footer"] || {}
+  };
+}
+
 export async function generateMetadata({
   params: paramsPromise,
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const params = await paramsPromise;
-  const { locale, id } = params;
-  const t = (await import(`/messages/${locale}.json`)).default["Second"] || {};
+  const { locale, id } = await paramsPromise;
+  const messages = (await import(`../../../../messages/${locale}.json`)).default;
+  const t = messages["Second"] || {};
+
   return {
     title: t.title || "Steam Profile",
     description: t.description || `Profile for Steam ID ${id}`,
@@ -23,8 +34,7 @@ export default async function Second({
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const params = await paramsPromise;
-  const { locale, id } = params;
+  const { locale, id } = await paramsPromise;
 
   const API_KEY = "F13BAFFBDD51BE5EB848937B593F699F";
 
@@ -41,16 +51,13 @@ export default async function Second({
   const res = await fetch(apiUrl, { next: { revalidate: 3600 } });
 
   if (!res.ok) {
-    console.error(
-      `HTTP error! Status: ${res.status}, Response: ${await res.text()}`
-    );
+    console.error(`HTTP error! Status: ${res.status}, Response: ${await res.text()}`);
     notFound();
   }
 
   const data = await res.json();
-  console.log("API Response:", data);
-
   const player = data.response?.players?.[0];
+
   if (!player || player.communityvisibilitystate !== 3) {
     notFound();
   }
@@ -58,27 +65,17 @@ export default async function Second({
   const nickname = player.personaname;
   const avatarUrl = player.avatarfull;
 
-  // Загружает переводы
-  const translations = (await import(`/messages/${locale}.json`)).default;
-  const tSecond = translations["Second"] || {};
-  const tHome = translations["Home"] || {};
-  const tFooter = translations["Footer"] || {};
+  // Переводы
+  const { tSecond, tHome, tFooter } = await loadMessages(locale);
 
   return (
     <>
-      <Header />
-      
-      {/* Replace the original profile section with the new ProfileHeader */}
-      <ProfileHeaderWrapper
-        nickname={nickname} 
-        avatarUrl={avatarUrl} 
-      />
-      
+      <ProfileHeaderWrapper nickname={nickname} avatarUrl={avatarUrl} />
+
       <div
         className="w-[100vw] h-[70vh] relative grid grid-cols-1 md:grid-cols-3"
         style={{
-          backgroundImage:
-            "url('https://static.csstats.gg/images/cs-background.png')",
+          backgroundImage: "url('https://static.csstats.gg/images/cs-background.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -86,8 +83,7 @@ export default async function Second({
         <div className="absolute top-1/2 -translate-y-1/2 bg-[#D04143] py-3.5 px-3 text-white text-xs flex items-center gap-3 w-[100vw] justify-center">
           <TriangleAlert width={14} height={16} />
           <p>
-            {tSecond.pleaseRegister ||
-              "Please register or log in to view full profile details."}
+            {tSecond.pleaseRegister || "Please register or log in to view full profile details."}
           </p>
           <a
             href="https://csstats.xyz"
@@ -98,13 +94,12 @@ export default async function Second({
               src="https://static.csstats.gg/images/steam.png"
               width={22}
               height={22}
-              alt="Official CS:GO Matchmaking"
+              alt="Steam"
             />
           </a>
         </div>
       </div>
 
-      {/* Footer */}
       <div className="w-full min-h-[250px] h-[340px] md:h-[320px] relative bg-[#141621]">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 py-4">
           <h4 className="font-normal text-sm mb-4">{tFooter.pleaseRegister}</h4>

@@ -1,0 +1,169 @@
+{
+	"Home": {
+	  "search": "Find a player (Steam ID/Steam profile link/your custom Steam URL) or add a match",
+	  "title": "CS2 Statistics",
+	  "subtitle": "Track your CS2 stats in competitive and Premier mode",
+	  "subtitle1": "and earn skins for your skill",
+	  "signInWithSteam": "Sign in with Steam",
+	  "viewYourStats": "VIEW YOUR STATS",
+	  "steamBot": {
+		"introducing": "Introducing",
+		"title": "Skins for",
+		"beta": "Skill!",
+		"description": "Log into your account, and you can see,",
+		"description1": "what you can earn a skin for.",
+		"slotsRemaining": "{count} slots remaining",
+		"addToFriends": "Add to Friends"
+	  },
+	  "stats": {
+		"gamesProcessed": "games processed",
+		"playersSeen": "players seen",
+		"vacBansTracked": "VAC bans tracked"
+	  },
+	  "postMatchAdvancedStats": {
+		"title": "Post-Match Advanced Stats",
+		"description": "After processing your match, check out our advanced CS2 stats on the dashboard. We have all the basic metrics, and you can also see who got the first frags, who traded beyond skins, and who was the clutch king!"
+	  },
+	  "roundByRoundMatchBreakdown": {
+		"title": "Round-by-Round Match Breakdown",
+		"description": "We provide detailed round data, such as how the round was won, whether there was a clutch, and a full list of kills. It’s perfect for finding that round where your friend died in the first 10 seconds!"
+	  },
+	  "automaticMatchTracking": {
+		"title": "Automatic Match Tracking",
+		"description": "No need to add matches manually after they finish! Just sign in with Steam, add the game authentication code, and if a match is missing, we’ll automatically add all your new CS2 matches to help track your progress to Global Elite."
+	  },
+	  "detailedMatchHistory": {
+		"title": "Detailed Match History",
+		"description": "CS2 is a great game, but in-game you can only see the last 8 matches if you haven't downloaded the demo, which isn’t very convenient. We let you track your entire match history."
+	  },
+	  "vacBanTracking": {
+		"title": "VAC Ban Tracking",
+		"description": "We constantly check our database for VAC and Overwatch bans. When players get banned, you can see them on the 'Who You Played With' tab in your profile. There’s even a special filter to show only those players you played with who got banned."
+	  },
+	  "trackPersonalProgress": {
+		"title": "Track Personal Progress",
+		"description": "After 1000 hours of gameplay, you might want to see how much you've improved. Check out the graphs in your profile to evaluate your progress. Remember, when you rank up, your stats may temporarily drop, but once they start rising again, you might be ready for the next rank!"
+	  },
+	  "eseaIntegration": {
+		"csgostats": "csgostats",
+		"description": "If you want to play against fewer cheaters but love our stats, we now also support ESEA match pages!"
+	  },
+	  "getStarted": {
+		"title": "Get Started Now",
+		"description": "Start tracking your CS2 stats right now – simply sign in with Steam below and we'll guide you through the next steps."
+	  }
+	},
+	"Second": {
+	  "pleaseRegister": "Please register to see detailed information."
+	},
+	"Footer": {
+	  "followUs": "Follow us!",
+	  "description": "csstat.com is an online service for tracking CS2 stats. Start tracking your competitive CS2 match history now.",
+	  "termsOfUse": "Terms of Use",
+	  "privacyPolicy": "Privacy Policy",
+	  "privacySettings": "Privacy Settings",
+	  "dmcaPolicy": "DMCA Policy",
+	  "cs2Stats": "",
+	  "forFeedback": "For feedback, contact us at: support@csstats.com",
+	  "poweredBySteam": "",
+	  "bottom": ""
+	},
+	"SubNav": {
+	  "overview": "HOME PAGE",
+	  "leaderboards": "LEADERBOARDS",
+	  "matches": "ALL MATCHES",
+	  "about": "SPRAY PATTERNS",
+	  "faq": "TRAINING MAP"
+	},
+	"Leaderboards": {
+	  "title": "Leaderboards",
+	  "player": "Player",
+	  "tracked": "Tracked",
+	  "wins": "Wins",
+	  "currentRank": "Current Rank",
+	  "bestRank": "Best Rank",
+	  "lastMatch1": "Last Match",
+	  "lastMatch": {
+		"match_c94211a5": "5 hours ago",
+		"match_91ee04bb": "Thu 20 Feb 25",
+		"match_928dc6f0": "Sat 15 Mar 25",
+		"match_87aeae44": "Sat 22 Feb 25",
+		"match_fb36534c": "Mon 24 Feb 25",
+		"match_52f8a196": "1 day ago",
+		"match_d2919aaf": "Fri 21 Feb 25",
+		"match_09e0dda1": "8 hours ago",
+		"match_bbf69e5b": "Thu 6 Mar 25",
+		"match_073cc300": "Tue 18 Mar 25",
+		"match_14e7eeb5": "Tue 4 Mar 25",
+		"match_1a7a928b": "Thu 27 Feb 25",
+		"match_9cc70947": "Mon 3 Mar 25",
+		"match_782cfdc0": "Sat 1 Mar 25",
+		"match_ee7a1289": "Wed 19 Mar 25",
+		"match_69e7b6bc": "Tue 25 Feb 25",
+		"match_ac77d566": "22 hours ago",
+		"match_79ed9f08": "Sun 2 Mar 25",
+		"match_5a0f42b8": "Sun 9 Mar 25",
+		"match_0b842544": "Sun 16 Mar 25",
+		"match_8cd0681c": "1 hour ago",
+		"match_719eb5b7": "Mon 17 Mar 25",
+		"match_baf64265": "Mon 10 Mar 25",
+		"match_50f644a8": "15 hours ago",
+		"match_a3b6218b": "Wed 5 Mar 25",
+		"match_71e5e7df": "20 hours ago",
+		"match_0c146aec": "48 minutes ago",
+		"match_aeacecc5": "Sun 23 Feb 25",
+		"match_b6285779": "21 hours ago",
+		"match_e9c2a33e": "2 hours ago",
+		"match_8cb3ecf8": "Wed 19 Feb 25",
+		"match_a9e15811": "Thu 13 Mar 25",
+		"match_83b5819d": "Tue 11 Mar 25",
+		"match_ad3440af": "6 hours ago",
+		"match_da0a9517": "4 hours ago",
+		"match_ca3d8895": "Sat 8 Mar 25",
+		"match_bc7e9691": "Fri 14 Mar 25",
+		"match_329b0526": "17 hours ago",
+		"match_c07adf52": "Fri 28 Feb 25",
+		"match_0dcd3e54": "Wed 26 Feb 25",
+		"match_54731ed4": "9 hours ago",
+		"match_5c5ba944": "3 hours ago",
+		"match_7ae3fb01": "23 hours ago",
+		"match_189ad3ee": "59 minutes ago",
+		"match_975a4df9": "53 minutes ago",
+		"match_61e04391": "19 hours ago",
+		"match_e5e67ef1": "7 hours ago",
+		"match_729852a9": "Wed 12 Mar 25",
+		"match_c3c6f67e": "Fri 7 Mar 25",
+		"match_2e43c62f": "56 minutes ago",
+		"match_caef0c51": "11 hours ago",
+		"match_98144d49": "18 hours ago",
+		"match_8c1353f6": "14 hours ago",
+		"match_036269ce": "47 minutes ago",
+		"match_7eed795f": "16 hours ago",
+		"match_d6c498f5": "13 hours ago",
+		"match_d30dc6b1": "51 minutes ago",
+		"match_8bf72205": "12 hours ago",
+		"match_d6e86647": "10 hours ago",
+		"match_b2f091fe": "49 minutes ago"
+	  }
+	},
+	"Match": {
+	  "matches": "Matches",
+	  "date": "Time",
+	  "teams": "Teams",
+	  "map": "Map",
+	  "score": "Score",
+	  "details": "Details",
+	  "player": "Player",
+	  "kills": "Kills",
+	  "deaths": "Deaths",
+	  "adr": "ADR",
+	  "minutesAgo": "minutes ago"
+	},
+	"Spray": {
+	  "recoilHeight": "Recoil Height",
+	  "recoilWidth": "Recoil Width",
+	  "recoilArea": "Recoil Area",
+	  "lessThanCSGO": "less than in CS:GO"
+	}
+  }
+  
