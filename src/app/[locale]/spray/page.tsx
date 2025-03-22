@@ -202,7 +202,7 @@ export default function SprayPatternsPage() {
   return (
     <div className="max-w-7xl mx-auto py-10 px-4 text-white">
       {/* Sticky panel */}
-      <div className="sticky top-0 z-50 bg-[#0B0E19] px-4 py-2 border-b border-blue-500 flex space-x-4 overflow-x-auto">
+      <div className="sticky top-0 z-50 bg-[#0e0f17]/70 backdrop-blur-lg shadow-md flex space-x-4 overflow-x-auto border-b border-blue-500 pb-2 mb-8 px-4">
         {weapons.map((weapon) => (
           <button
             key={weapon.id}
