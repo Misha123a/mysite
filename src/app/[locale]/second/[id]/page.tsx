@@ -1,7 +1,9 @@
+
 import { ProfileHeaderWrapper } from "@/components/ProfileHeaderWrapper";
 import { TriangleAlert } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+
 
 // Подгружаем переводы по locale
 async function loadMessages(locale: string) {

@@ -1,5 +1,10 @@
 'use client'
-
+export async function generateMetadata() {
+	return {
+	  title: 'CSStats — Compare CS2 Spray Patterns & Stats',
+	  description: 'Interactive recoil comparison and real‑time CS2 player statistics.',
+	}
+  }
 import Image from 'next/image'
 import RecentMatches from '../../components/RecentMatches'
 import { Eye, UserRound, ChartNoAxesColumn } from 'lucide-react'
@@ -8,7 +13,9 @@ import { useTranslations } from 'next-intl'
 export default function Home() {
 	const tHome = useTranslations('Home')
 	const tFooter = useTranslations('Footer')
+	
 
+	  
 	return (
 		<>
 			{/* Hero Section */}
