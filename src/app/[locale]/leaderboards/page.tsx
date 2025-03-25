@@ -1,10 +1,4 @@
 'use client'
-export async function generateMetadata() {
-  return {
-    title: 'CSStats — Compare CS2 Spray Patterns & Stats',
-    description: 'Interactive recoil comparison and real‑time CS2 player statistics.',
-  }
-  }
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
