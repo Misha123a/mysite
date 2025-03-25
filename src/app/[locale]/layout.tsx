@@ -55,6 +55,10 @@ export const metadata: Metadata = {
   title: 'CS2 Stats - The Ultimate CS2 Stat Tracker - csstat.com',
   description:
     'Automatically track your CS2 stats, matches and rank. Share your CS2 stats with your friends, or just watch your stats progress over time.',
+    icons: {
+      icon: "/favicon.ico",
+      shortcut: "/favicon.ico",
+    },
 }
 
 // 📦 Пропсы
@@ -76,6 +80,18 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   return (
 <html lang={locale}>
   <head>
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "csstat.com",
+      url: "https://csstat.com",
+      logo: "https://csstat.com/favicon.ico", // ✅ Используем favicon как logo
+    }),
+  }}
+/>
     {/* Global Google tag (gtag.js) */}
     <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16945154777" strategy="afterInteractive" />
     <Script id="gtag-init" strategy="afterInteractive">
