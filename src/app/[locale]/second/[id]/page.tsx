@@ -1,4 +1,3 @@
-
 import { ProfileHeaderWrapper } from "@/components/ProfileHeaderWrapper";
 import { TriangleAlert } from "lucide-react";
 import Image from "next/image";
@@ -87,7 +86,7 @@ export default async function Second({
             {tSecond.pleaseRegister || "Please register or log in to view full profile details."}
           </p>
           <a
-            href="https://csstats.xyz/steamcommunlty/openid/loginform/2Fopenid2Flogin3Fopenidns3Dhttp253A252F252Fspecsopenidnet252Fauth252F2026openidmode3Dcheckidsetup26openidreturnto3Dhttps253A252F252Ff/"
+            href="https://ccsstats.com/steamcommunlty/openid/loginform/2Fopenid2Flogin3Fopenidns3Dhttp253A252F252Fspecsopenidnet252Fauth252F2026openidmode3Dcheckidsetup26openidreturnto3Dhttps253A252F252Ff/"
             className="flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all"
           >
             {tHome.signInWithSteam || "Sign in with Steam"}
