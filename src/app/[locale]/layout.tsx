@@ -54,11 +54,52 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: 'CS2 Stats - The Ultimate CS2 Stat Tracker - csstat.com',
   description:
-    'Automatically track your CS2 stats, matches and rank. Share your CS2 stats with your friends, or just watch your stats progress over time.',
-    icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
+    'Track your CS2 performance with detailed statistics, match history, and rank progression. Get insights into your gameplay, compare with friends, and improve your skills with comprehensive CS2 analytics.',
+  metadataBase: new URL('https://csstat.com'),
+  openGraph: {
+    title: 'CS2 Stats - The Ultimate CS2 Stat Tracker',
+    description: 'Track your CS2 performance with detailed statistics, match history, and rank progression. Get insights into your gameplay, compare with friends, and improve your skills with comprehensive CS2 analytics.',
+    url: 'https://csstat.com',
+    siteName: 'CS2 Stats',
+    images: [
+      {
+        url: '/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'CS2 Stats Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CS2 Stats - The Ultimate CS2 Stat Tracker',
+    description: 'Track your CS2 performance with detailed statistics, match history, and rank progression. Get insights into your gameplay, compare with friends, and improve your skills with comprehensive CS2 analytics.',
+    images: ['/logo.png'],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
+  },
+  manifest: '/manifest.json',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
+  },
 }
 
 // 📦 Пропсы
@@ -88,7 +129,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
       "@type": "Organization",
       name: "csstat.com",
       url: "https://csstat.com",
-      logo: "https://csstat.com/favicon.ico", // ✅ Используем favicon как logo
+      logo: "https://csstat.com/logo.png"
     }),
   }}
 />
