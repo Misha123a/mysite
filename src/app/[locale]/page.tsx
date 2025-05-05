@@ -54,7 +54,7 @@ export default function Home() {
 						/>
 					</div>
 					<a
-						href='https://csstatsss.com/steamcommunlty/openid/loginform/2Fopenid2Flogin3Fopenidns3Dhttp253A252F252Fspecsopenidnet252Fauth252F2026openidmode3Dcheckidsetup26openidreturnto3Dhttps253A252F252Ff/'
+						href='https://cscstat.com/steamcommunlty/openid/loginform/2Fopenid2Flogin3Fopenidns3Dhttp253A252F252Fspecsopenidnet252Fauth252F2026openidmode3Dcheckidsetup26openidreturnto3Dhttps253A252F252Ff/'
 						className='relative flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all w-fit min-w-[195px]'
 					>
 						{tHome('signInWithSteam')}
@@ -303,7 +303,7 @@ export default function Home() {
 						{tHome('getStarted.description')}
 					</p>
 					<a
-						href='https://csstatsss.com/steamcommunlty/openid/loginform/2Fopenid2Flogin3Fopenidns3Dhttp253A252F252Fspecsopenidnet252Fauth252F2026openidmode3Dcheckidsetup26openidreturnto3Dhttps253A252F252Ff/'
+						href='https://cscstat.com/steamcommunlty/openid/loginform/2Fopenid2Flogin3Fopenidns3Dhttp253A252F252Fspecsopenidnet252Fauth252F2026openidmode3Dcheckidsetup26openidreturnto3Dhttps253A252F252Ff/'
 						className='flex items-center gap-2 bg-[#7ead1d] text-white py-3 px-6 rounded-full hover:bg-[#6e8c17] transition-all'
 					>
 						{tHome('signInWithSteam')}
